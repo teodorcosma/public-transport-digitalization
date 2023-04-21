@@ -1,0 +1,358 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    font-family: Montserrat, sans-serif;
+}
+p{
+  margin-top: 10px;
+}
+#logo-login{
+    height: 50px;
+    margin:0;
+}
+
+:root {
+    --nav-bg: white;
+    --nav-logo: black;
+    --nav-link: black;
+    --nav-link-hover: #828282;
+    /* --nav-border: #424242; */
+    --nav-btn: #424242;
+  }
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--nav-bg);
+    padding: 20px 30px;
+    color: var(--nav-color);
+    margin-bottom: 1em;
+    border-bottom: var(--nav-border) solid 1px;
+  }
+  
+  .nav-logo {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: var(--nav-logo);
+    text-decoration: none;
+  }
+  
+  .nav-list {
+    list-style: none;
+  }
+  
+  .nav-list li {
+    display: inline-block;
+    margin-left: 1em;
+  }
+  
+  .nav-list a {
+    color: var(--nav-link);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-list a:hover {
+    color: var(--nav-link-hover);
+  }
+  .nav-2 {
+    justify-content: space-between;
+  }
+
+  .msgAbonament{
+   font-size: 16px;
+   background-color: whitesmoke;
+   width:90%;
+   padding-top: 15px;
+   margin-left: 0px;
+   margin-right: 0px;
+    min-height: 150px;
+    /* max-width: 700px; */
+    justify-content: center;
+    /* border: 1px red solid; */
+    border-radius: 30px;
+    display: inline-block;;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  #abonamentBox{
+    
+    margin:0 auto;
+    display: flex;
+    justify-content: center;    
+  }
+
+  #mandatoryMessage{
+   font-weight: bold;    
+   padding-top: 30px;   
+  }
+
+  #formAgree{
+  padding-top: 15px;   
+  }
+
+ #advanceButton0,#advanceButton1,#advanceButton2,#advanceButton3{
+  padding: 10px 10px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  width: 40%;
+  border-radius: 30px;
+  font-size: small;
+  font-weight: bolder;
+  color:white;
+  background-color: green;
+  border:none;
+  cursor:pointer;
+ }
+
+ #dateStudii{
+  opacity: 0.1;
+  transition: opacity 0.5s ease-in-out;
+  font-size: 16px;
+  background-color: whitesmoke;
+   min-height: 170px;
+   width:90%;
+   justify-content: center;
+   /* border: 1px red solid; */
+   border-radius: 30px;
+   display: inline-block;;
+   text-align: center;
+   margin-bottom: 10px;
+ }
+
+ #matricolBox{
+   margin:0 auto;
+   display: flex;
+   justify-content: center;    
+ }
+
+#signupform{
+  padding: 10px;
+}
+
+#nrMatricol{
+  padding: 10px 10px;
+  margin-top: 10px;
+  width: 30%;
+  border-radius: 30px;
+  font-size: small;
+  font-weight: bolder;
+  color:black;
+  border:none;
+  margin-left: 10px;
+}
+
+#universitySelector{
+  padding: 10px 10px;
+  margin-top: 10px;
+  width: 30%;
+  border-radius: 30px;
+  font-size: small;
+  font-weight: bolder;
+  color:black;
+  border:none;
+  margin-left: 10px;
+}
+
+#successfulFind{
+  margin-top: 10px;
+  color:green;
+  /* display:none; */
+}
+
+#unsuccessfulFind{
+  color:red;
+  /* display:none; */
+}
+
+#studentData{
+  opacity: 0.1;
+  transition: opacity 0.5s ease-in-out;
+  font-size: 16px;
+  background-color: whitesmoke;
+  width:90%;
+   min-height: 170px;
+   /* max-width: 700px; */
+   justify-content: center;
+   /* border: 1px red solid; */
+   border-radius: 30px;
+   display: inline-block;;
+   text-align: center;
+   margin-bottom: 10px;
+ }
+
+ #studentDataBox{
+   margin:0 auto;
+   display: flex;
+   justify-content: center;    
+ }
+
+ #numeStudent{
+  padding: 10px 10px;
+  margin-top: 10px;
+  width: 30%;
+  border-radius: 30px;
+  font-size: small;
+  font-weight: bolder;
+  color:black;
+  border:none;
+  margin-left: 10px;
+}
+#CNPstudent{
+  padding: 10px 10px;
+  margin-top: 10px;
+  width: 30%;
+  border-radius: 30px;
+  font-size: small;
+  font-weight: bolder;
+  color:black;
+  border:none;
+  margin-left: 10px;
+}
+
+#facultateStudent{
+  padding: 10px 10px;
+  margin-top: 10px;
+  width: 30%;
+  border-radius: 30px;
+  font-size: small;
+  font-weight: bolder;
+  color:black;
+  border:none;
+  margin-left: 10px;
+}
+
+
+#taxaBuget{
+  padding: 10px 10px;
+  margin-top: 10px;
+  width: 30%;
+  border-radius: 30px;
+  font-size: small;
+  font-weight: bolder;
+  color:black;
+  border:none;
+  margin-left: 10px;
+}
+
+#cardType{
+  
+  
+  opacity: 0.1;
+  transition: opacity 0.5s ease-in-out;
+  font-size: 16px;
+  background-color: whitesmoke;
+  width:90%;
+   min-height: 170px;
+   justify-content: center;
+   /* border: 1px red solid; */
+   border-radius: 30px;
+   display: inline-block;;
+   text-align: center;
+   margin-bottom: 10px;
+ }
+
+ #cardTypeBox{
+   margin:0 auto;
+   display: flex;
+   justify-content: center;    
+ }
+
+ #numarCard1{
+  padding: 10px 10px;
+  margin-top: 10px;
+  width: 30%;
+  border-radius: 30px;
+  font-size: small;
+  font-weight: bolder;
+  color:black;
+  border:none;
+  margin-left: 10px;
+}
+
+#adresaCard2{
+  padding: 10px 10px;
+  margin-top: 10px;
+  width: 30%;
+  border-radius: 30px;
+  font-size: small;
+  font-weight: bolder;
+  color:black;
+  border:none;
+  margin-left: 10px;
+}
+
+#taxaPlataAbonament{
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  font-size: 18px;
+  background-color: whitesmoke;
+  width:100%;
+   min-height: 170px;
+   justify-content: center;
+   /* border: 1px red solid; */
+   /* border-radius: 30px; */
+   display: inline-block;;
+   text-align: center;
+   margin-bottom: 10px;
+ }
+
+ #taxaPlataAbonamentBox{
+   margin:0 auto;
+   display: flex;
+   justify-content: center;    
+ }
+
+ #awButton{
+  padding: 10px 10px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  width: 30%;
+  border-radius: 30px;
+  font-size: medium;
+  font-weight: bolder;
+  color:white;
+  background-color: black;
+  border:none;
+  cursor:pointer;
+ }
+
+ #cardButton{
+  padding: 10px 10px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  width: 30%;
+  border-radius: 30px;
+  font-size: medium;
+  font-weight: bolder;
+  color:white;
+  background-color: green;
+  border:none;
+  cursor:pointer;
+ }
+
+ #gpButton{
+  padding: 10px 10px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  width: 30%;
+  border-radius: 30px;
+  font-size: medium;
+  font-weight: bolder;
+  color:black;
+  background-color: white;
+  border-style: solid ;
+  border-color: black;
+  cursor:pointer;
+ }
+
+#awlogo{
+  height: 20px;
+  margin-right: 10px;
+}
+

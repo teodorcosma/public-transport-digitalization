@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="abonament.css">
+    <script defer src="abonament.js"></script>
+</head>
+
+<nav class="nav nav-2">
+    <a class="nav-logo" href="index.html">
+        <img id='logo-login' src="CTP-transp.png">
+    </a>
+    
+    <ul class="nav-list">
+      <li>
+        <a href="/abonament.html">Abonament</a>
+      </li>
+    
+        <li>
+          <a href="/contact.html">Contact</a>
+        </li>
+    </ul>
+</nav>
+
+<body>
+    <div id="all">
+        <div ><img id="imagine-bus" src="cluj.jpg"></div>
+        <div id="imagine-nume">
+            <img id="profile-img" src="teo.JPG">
+            <h1 id="profile-name">Salut, <span id="nume">Teo</span>.</h1>
+        </div>
+        <div id="abonament">
+            <p id="calatorii">Număr călătorii rămase:</p>
+            <p id="nr-cal"></p>
+            <br>
+            <p id="expirare">Abonamentul tău expiră la data de:</p>
+            <p id="data-expirare">25.11.2022</p>
+        </div>
+        <button id="buton" onclick="onClick()">Abonamentul Tău</button>
+    </div>
+
+    <div id="overlay">
+    </div>
+
+    
+    
+    <div id="abonamentul">
+        <button id="butonX" onclick="closeMenu()">X</button>    
+        <img id="qr-code" src="qr.png">
+        <p id="nr-ab">Număr abonament: 55962341.</p>
+        <p id="abonament-nume">
+            Abonamentul utilizatorului:<br> 
+            <br>
+            <span id="ab-nume">Teo Cosma</span>
+        </p>
+        <div id="timp">Biletul este valibil pentru <span id="time">30:00</span> de minute!</div>
+
+    </div>
+    
+
+</body>
+
+
+
+</html>

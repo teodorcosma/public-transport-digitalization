@@ -1,0 +1,204 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(1, 1, 77);
+}
+
+h1{
+    padding:0;
+    margin:0;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+}
+
+#logo-login {
+    height: 50px;
+    margin: 0;
+}
+
+:root {
+    --nav-bg: whitesmoke;
+    --nav-logo: black;
+    --nav-link: black;
+    --nav-link-hover: #828282;
+    --nav-btn: #424242;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--nav-bg);
+    padding: 10px 30px;
+    color: var(--nav-color);
+    margin-bottom: 1em;
+    border-bottom: var(--nav-border) solid 1px;
+}
+
+
+.nav-logo {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: var(--nav-logo);
+    text-decoration: none;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-list li {
+    display: inline-block;
+    margin-left: 1em;
+}
+
+.nav-list a {
+    color: var(--nav-link);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: var(--nav-link-hover);
+}
+
+.nav-2 {
+    justify-content: space-between;
+}
+
+* {
+    background-color: whitesmoke;
+}
+
+#all{
+    
+    margin-left: 50px;
+}
+
+#imagine-nume{
+    height: 100px;
+    display: block;
+    /* border: 2px solid black; */
+}
+
+#profile-name {
+    /* margin-left:100px; */
+    /* margin: 0;
+    display: inline; */
+}
+
+#profile-img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border: 0;
+    border-radius: 100%;
+    /* float: left; */
+}
+
+
+#nume{
+    color:red;
+    
+    font-weight: bold;
+}
+
+#contact-us{
+    display: block;
+    margin-top: 70px;
+    font-size: 20px;
+}
+
+.formbold-mb-5 {
+    margin-bottom: 20px;
+  }
+  .formbold-pt-3 {
+    padding-top: 12px;
+  }
+  .formbold-main-wrapper {
+    display: flex;
+    float:left; 
+    width:70%;
+    min-width: 450px;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+  }
+
+  .formbold-form-wrapper {
+    margin: 0 auto;
+    /* max-width: 550px; */
+    width: 100%;
+    background: white;
+  }
+  .formbold-form-label {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    color: #07074d;
+    margin-bottom: 12px;
+  }
+  .formbold-form-label-2 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .formbold-form-input {
+    width: 80%;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+    background: white;
+    font-weight: 500;
+    font-size: 16px;
+    color: #6b7280;
+    outline: none;
+    resize: none;
+  }
+  .formbold-form-input:focus {
+    border-color: #0036ab;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .formbold-btn {
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 14px 32px;
+    border: none;
+    font-weight: 600;
+    background-color: rgb(1, 1, 77);;
+    color: white;
+    cursor: pointer;
+  }
+  .formbold-btn:hover {
+    background-color: rgb(0, 65, 162);
+    transition: background-color 0.2s ease-in-out ;
+  }
+
+  .formbold--mx-3 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  .formbold-px-3 {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .flex {
+    display: flex;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .w-full {
+    width: 100%;
+  }
+  @media (min-width: 540px) {
+    .sm\:w-half {
+      width: 50%;
+    }
+  }

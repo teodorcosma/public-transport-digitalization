@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="createAbonament.css">
+    <script defer src="createAbonament.js"></script>
+</head>
+
+<nav class="nav nav-2">
+    <a class="nav-logo" href="index.html">
+        <img id='logo-login' src="CTP-transp.png">
+    </a>
+    
+    <ul class="nav-list">
+      <li>
+        <a href="abonament.html">Dashboard</a>
+      </li>
+
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+    </ul>
+</nav>
+
+<body>
+    <div id="abonamentBox">
+        <div class="msgAbonament">
+            <a id="mandatoryMessage">Pentru a crea un abonament este necesar sa fiti de acord cu urmatoarele clauze : </a>
+            <form id="formAgree">
+                <input type="checkbox" id="Doc1" name="GDPR_accept_form" value="GDPR">
+                <label for="Doc1"> Sunt de acord sa imi fie procesate datele conform <a href="www.google.ro">GDPR</a></label><br>
+                <input type="checkbox" id="Doc2" name="TOC_accept_form" value="TOC">
+                <label for="Doc2"> Sunt de acord cu <a href="www.google.ro">Termeni si conditiile</a> CTP si a serviciilor prestate</label><br>
+              </form>
+        <button id="advanceButton0" onclick="changeStyle0()">Mergi mai departe</button>
+        </div>
+    </div>
+
+    
+    <div id="matricolBox">
+        <div id="dateStudii">
+            <form id="uniForm"></form>
+            <a id="mandatoryMessage">Selectati universitatea unde studiati si introduceti nr. matricol : </a>
+            <br>
+            <label for="NumarMatricol">Numar matricol:</label>
+            <input type="text" id="nrMatricol" name="matricol" placeholder=""> 
+            <br>              
+            <label for="universitySelector>">Universitatea :</label>
+            <select id="universitySelector">  
+             <option value="defaultSelectUni">Selectati Universitatea</option>
+             <option value="UTCN">Universitatea Tehnica din Cluj Napoca</option>
+             <option value="UBB">Universitatea Babes Bolyiai</option>
+             <option value="USAMV">Universitatea de Stiinta Agriculturii si Medicina Veterinara</option>
+             <option value="UMF">Univrsitatea de Medicina si Farmacie</option>
+             </select>
+             <br>
+             <a id="successfulFind">Studentul a fost identificat in baza de date !</a>
+             <!-- <a id="unsuccessfulFind">Studentul nu a fost identificat in baza de date !</a> -->
+             <br>
+             
+            </form>
+            <button id="advanceButton1"  onclick="changeStyle1()">Mergi mai departe</button>
+            
+        </div>
+    </div>
+
+        <div id="studentDataBox">
+            <div id="studentData">
+                <a id="mandatoryMessage">Datele studentului identificat : </a>
+                <form id="studentDataForm">
+                <label for="NumeStudent">Nume si prenume student</label>
+                <input type="text" id="numeStudent" name="numeStud" value="Teo Cosma" readonly> 
+                <br>      
+                <label for="CNP Student">CNP student</label>
+                <input type="text" id="CNPstudent" name="CNPStud" value="5000712124782" readonly> 
+                <br>      
+                <label for="FacultateStudent">Facultate student</label>
+                <input type="text" id="facultateStudent" name="facStud" value="Electronica, Telecomunicatii si Tehnologia Informatiei"readonly> 
+                <br>                
+                <label for="taxaBuget">Forma de scolarizare</label>
+                <input type="text" id="taxaBuget" name="taxaBuget" value="Taxa"readonly> 
+                <br>              
+                
+                
+            </form>
+            <button id="advanceButton1"  onclick="changeStyle2()">Mergi mai departe</button>
+            </div>
+
+            
+        </div>
+        <div id="cardTypeBox">
+            <div id="cardType">
+                <a id="mandatoryMessage">Card CTP : </a>
+                <form id="formAgree">
+                    <input type="checkbox" id="Card1" name="Card1" value="Card1">
+                    <label for="Card1"> Da, am deja card fizic si doresc sa mi asociez abonamentul cu cardul</label><br>
+                    <label for="Card1">Numar card</label>
+                    <input type="text" id="numarCard1" name="nrCard1" placeholder=""> 
+                    <br>      
+                    <input type="checkbox" id="Card2" name="Card2" value="Card2">
+                    <label for="Card2"> Nu am card fizic, dar doresc sa fie asociat si livrat la domiciliu</label><br>
+                    <label for="Card2">Adresa de livrare</label>
+                    <input type="text" id="adresaCard2" name="adCard2" placeholder=""> 
+                    <br>      
+                    <input type="checkbox" id="Card3" name="Card3" value="Card3">
+                    <label for="Card3"> Nu doresc card fizic</label><br>
+                    
+                  </form>
+            <button id="advanceButton3"  onclick="changeStyle3()">Mergi mai departe</button>
+            </div>
+        </div>
+
+        <div id="taxaPlataAbonamentBox">
+            <div id="taxaPlataAbonament">
+                <a id="mandatoryMessage">Finalizare abonament: </a>
+                 <p id="subscriptionDetails">Abonament studenti, reducere 50% student la taxa </p>
+                 <p id="subscriptionDetails">Numar calatorii : 120 </p>
+                 <p id="subscriptionDetails">Pret final : 55 RON </p>
+
+
+            <button type="button" id="cardButton"><img id="awlogo" src="card logo.webp" />Plata cu cardul</button>
+            <button type="button" id="awButton"><img id="awlogo" src="Apple_logo_grey.svg.png" />Apple Pay</button>
+            <button type="button" id="gpButton"><img id="awlogo" src="gpay.png" />Google Pay</button>
+
+            </div>
+        </div>
+
+</body>
+
+</html>
